@@ -9,5 +9,4 @@ class SpringKotlinPlaygroundApplicationTests {
     @Test
     fun contextLoads() {
     }
-
 }
