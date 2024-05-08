@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  postgres:
+    container_name: spring_kotlin_db
+    image: postgres:15.5-alpine
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=spring_kotlin_playground
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+volumes:
+  postgres_data:
