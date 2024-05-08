@@ -12,6 +12,8 @@ class PersonServiceImpl(val personRepository: PersonRepository) : PersonService 
 
     override fun getById(id: Int): Optional<PersonEntity> = personRepository.findById(id)
 
+    override fun getAdults(): List<PersonEntity> = personRepository.findAdult()
+
     override fun getAll(): List<PersonEntity> = personRepository.findAll()
 
     override fun updatePerson(id: Int, person: PersonEntity): PersonEntity {

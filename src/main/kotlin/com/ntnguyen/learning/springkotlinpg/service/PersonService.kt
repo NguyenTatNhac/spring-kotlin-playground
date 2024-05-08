@@ -9,6 +9,8 @@ interface PersonService {
 
     fun getById(id: Int): Optional<PersonEntity>
 
+    fun getAdults(): List<PersonEntity>
+
     fun getAll(): List<PersonEntity>
 
     fun updatePerson(id: Int, person: PersonEntity): PersonEntity

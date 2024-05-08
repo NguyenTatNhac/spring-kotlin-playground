@@ -1,0 +1,26 @@
+### GET all users
+GET http://localhost:8080/persons
+
+### GET Adults
+GET http://localhost:8080/persons/adults
+
+### Create user
+POST http://localhost:8080/persons
+Content-Type: application/json
+
+{
+  "name": "Nhac Tat Nguyen",
+  "age": 23
+}
+
+### Update user
+PUT http://localhost:8080/persons/4
+Content-Type: application/json
+
+{
+  "name": "Nhac Tat Nguyen",
+  "age": 27
+}
+
+### DELETE user
+DELETE http://localhost:8080/persons/3

@@ -14,6 +14,9 @@ class PersonController(val personService: PersonService) {
     @GetMapping("/{id}")
     fun getUser(@PathVariable id: Int) = personService.getById(id)
 
+    @GetMapping("/adults")
+    fun getAdults() = personService.getAdults()
+
     @PutMapping("/{id}")
     fun updateUser(@PathVariable id: Int, @RequestBody person: PersonEntity) = personService.updatePerson(id, person)
 
